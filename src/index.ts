@@ -17,7 +17,7 @@ app.use((req: Request, res: Response, next: NextFunction) => {
     next();
 })
 
-app.use(router);
+app.use('/api', router);
 
 app.listen(parseInt(PORT), () => {
     console.log(`Server running on port: ${PORT}`);
